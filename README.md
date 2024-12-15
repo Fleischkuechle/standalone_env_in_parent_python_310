@@ -1,5 +1,5 @@
 # standalone_env_in_parent_python_310
-This are windows batch scripts that install a standalone (portable) python 310 virtual environment using anaconda
+This are windows batch scripts that install a standalone (portable) python 310 virtual environment using  miniconda
 
 
 1_Double_Click_Me_To_INSTALL_MiniConda_VENV_python_version_310 .bat
