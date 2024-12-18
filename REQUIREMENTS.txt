@@ -1,0 +1,5 @@
+kivy
+fpdf2
+pywin32
+PyMuPDF
+qrcode[pil]

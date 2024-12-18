@@ -38,8 +38,8 @@ set INSTALL_ENV_DIR=%cd%\dev_env\env
 @REM set MINICONDA_CHECKSUM=307194e1f12bbeb52b083634e89cc67db4f7980bd542254b43d3309eaf7cb358
 @REM chaged to miniconda latest.
 set MINICONDA_DOWNLOAD_URL=https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe
-set MINICONDA_CHECKSUM=3a8897cc5d27236ade8659f0e119f3a3ccaad68a45de45bfdd3102d8bec412ab
-
+@REM set MINICONDA_CHECKSUM=3a8897cc5d27236ade8659f0e119f3a3ccaad68a45de45bfdd3102d8bec412ab
+set MINICONDA_CHECKSUM=be382fc02742c734fd3c399c5e5d322bc9b43292117827ab9aa6f7446351e45c
 
 set conda_exists=F
 
