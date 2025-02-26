@@ -34,12 +34,10 @@ set INSTALL_DIR=%cd%\dev_env
 set CONDA_ROOT_PREFIX=%cd%\dev_env\conda
 set INSTALL_ENV_DIR=%cd%\dev_env\env
 @REM see here for other versions: https://repo.anaconda.com/miniconda/
-@REM set MINICONDA_DOWNLOAD_URL=https://repo.anaconda.com/miniconda/Miniconda3-py310_23.3.1-0-Windows-x86_64.exe
-@REM set MINICONDA_CHECKSUM=307194e1f12bbeb52b083634e89cc67db4f7980bd542254b43d3309eaf7cb358
-@REM chaged to miniconda latest.
-set MINICONDA_DOWNLOAD_URL=https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe
-@REM set MINICONDA_CHECKSUM=3a8897cc5d27236ade8659f0e119f3a3ccaad68a45de45bfdd3102d8bec412ab
-set MINICONDA_CHECKSUM=be382fc02742c734fd3c399c5e5d322bc9b43292117827ab9aa6f7446351e45c
+set MINICONDA_DOWNLOAD_URL=https://repo.anaconda.com/miniconda/Miniconda3-py310_25.1.1-2-Windows-x86_64.exe
+set MINICONDA_CHECKSUM=80ff6cb7cef57be6ff1c7997fad96de3783934e9cea5c46769f840b8bd5b921f
+
+
 
 set conda_exists=F
 

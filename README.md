@@ -1,6 +1,25 @@
 # standalone_env_in_parent_python_310
 This are windows batch scripts that install a standalone (portable) python 310 virtual environment using  miniconda
 
+ATTENTIONE ---------Checksum Verivication need to be updated.--------------!!!!!!!!!!!!!
+
+
+The checksum is a hash function that checks if miniconda is comming from the right source
+if you get a message on installation of miniconda that says
+Checksum does not match you need to  go to the developers page to get the correct checksum
+and add it to the bat file. 
+(ill try to keep it uptodate right now its 26.02.2025)
+this is the hash
+2025-02-11 15:04:49	fb936987b769759fc852af1b2a0e359ac14620c2b7bea8a90c6d920f2b754c4a
+on this url
+https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe
+
+added two miniconda installer:
+one for miniconda latest:
+1_1_Double_Click_Me_To_INSTALL_MiniConda_dev_env_python_version_Latest__In_Parent .bat
+one for miniconda python 310
+1_0_Double_Click_Me_To_INSTALL_MiniConda_dev_env_python_version_310__In_Parent.bat
+
 for cloning
 
 git clone https://github.com/Fleischkuechle/standalone_env_in_parent_python_310.git
@@ -10,7 +29,7 @@ git clone https://github.com/Fleischkuechle/standalone_env_in_parent_python_310.
 1_Double_Click_Me_To_INSTALL_MiniConda_VENV_python_version_310 .bat
 here you can find diffrent version of miniconda: https://repo.anaconda.com/miniconda/
 in this bat script this one is used:
-set MINICONDA_DOWNLOAD_URL=https://repo.anaconda.com/miniconda/Miniconda3-py310_23.3.1-0-Windows-x86_64.exe
+set MINICONDA_DOWNLOAD_URL=https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe
 to install others just replace this link.
 This installs a miniconda in the folder where its placed in and the doubleclick on it
 
