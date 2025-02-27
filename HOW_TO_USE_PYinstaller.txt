@@ -19,4 +19,4 @@ pyinstaller --onefile Get_Catia_Info_App.py
 
 (D:\04\03\01\dev_env\env) D:\04\03\01>pyinstaller --onefile Get_Catia_Info_App.py
 
-(D:\11\02\31\dev_env\env) D:\11\02\31\Catia_Size_Reader_KivyMD_App>--onefile MD_Catia_Size_Reader_App.py
+(D:\11\02\31\dev_env\env) D:\11\02\31\Catia_Size_Reader_KivyMD_App>pyinstaller --onefile MD_Catia_Size_Reader_App.py
