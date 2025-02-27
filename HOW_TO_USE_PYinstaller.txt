@@ -1,0 +1,22 @@
+pip install pyinstaller
+sihe hier 
+https://pyinstaller.org/en/stable/
+
+
+Kivy_app_get_catia_info.py
+
+open Python terminal
+im my case i use 3_Double_Click_Me_To_OPEN_MiniConda_dev_env_In_Terminal_In_Parent.bat
+
+
+navigate to the folder where the file is the type:
+
+pyinstaller --onefile Kivy_app_get_catia_info.py
+
+
+
+pyinstaller --onefile Get_Catia_Info_App.py
+
+(D:\04\03\01\dev_env\env) D:\04\03\01>pyinstaller --onefile Get_Catia_Info_App.py
+
+(D:\11\02\31\dev_env\env) D:\11\02\31\Catia_Size_Reader_KivyMD_App>--onefile MD_Catia_Size_Reader_App.py
