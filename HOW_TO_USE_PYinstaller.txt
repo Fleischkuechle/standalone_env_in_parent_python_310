@@ -20,3 +20,58 @@ pyinstaller --onefile Get_Catia_Info_App.py
 (D:\04\03\01\dev_env\env) D:\04\03\01>pyinstaller --onefile Get_Catia_Info_App.py --noconsole
 
 (D:\11\02\31\dev_env\env) D:\11\02\31\Catia_Size_Reader_KivyMD_App>pyinstaller --onefile MD_Catia_Size_Reader_App.py --noconsole
+
+
+pyinstaller --onefile MD_Catia_Bom_Generator_App.py --noconsole
+
+place the icon besides the py file
+Nerd123Logo_ohneBackground.ico
+
+pyinstaller.exe --onefile --windowed --icon=app.ico app.py
+
+##########onefile leads to detection of a trojan 
+pyinstaller --onefile --name Catia_V5_Bom_Generator_V_1_0_1   --noconsole --windowed --icon=Nerd123Logo_ohneBackground.ico MD_Catia_Bom_Generator_App.py
+
+###########alternative do one dir and pack it with (Inno Setup. )  You can also use some installer that will pack the "onedir" if you want, like NSIS, or Inno Setup. 
+pyinstaller --onedir  --name Catia_V5_Bom_Generator_V_1_0_1  --noconsole --windowed --icon=Nerd123Logo_ohneBackground.ico MD_Catia_Bom_Generator_App.py
+
+
+
+(D:\11\02\31\dev_env\env) D:\11\02\31\Catia_Size_Reader_KivyMD_App>pyinstaller --onefile  --noconsole --windowed --icon=Nerd123Logo_ohneBackground.ico MD_Catia_Bom_Generator_App.py
+
+Catia_V5_Bom_Generator_V_1_0_1
+
+#!!!!!!!!!!!!!!--------Remove pygen folder   "genpy"   ussually in temp   "C:\Users\<my username>\AppData\Local\Temp\gen_py"
+see here https://stackoverflow.com/questions/33267002/why-am-i-suddenly-getting-a-no-attribute-clsidtopackagemap-error-with-win32com
+
+ def get_executable_path(
+        self,
+    ):
+        """Returns the directory where the executable is located."""
+
+        if getattr(sys, "frozen", False):
+            # If the application is frozen (running as an EXE)
+            exe_path = sys._MEIPASS
+            if exe_path:
+                # Get the parent directory of _MEIPASS
+                parent_path = os.path.dirname(exe_path)
+                # Delete the 'genpy' folder if it exists
+                genpy_path = os.path.join(parent_path, "genpy")
+                if os.path.exists(genpy_path):
+                    shutil.rmtree(genpy_path)
+                    print(f"removed because of issues if not: {genpy_path}")
+                return exe_path
+        else:
+            # If the application is not frozen (running as a script)
+            exe_path = os.path.dirname(os.path.abspath(__file__))
+
+        return exe_path
+
+
+
+
+
+
+
+
+
