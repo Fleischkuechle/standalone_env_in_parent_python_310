@@ -1,6 +1,9 @@
 pip install pyinstaller
 sihe hier 
 https://pyinstaller.org/en/stable/
+different versions of pyinstaller:
+https://pyinstaller.org/en/v6.12.0/CHANGES.html
+
 
 
 Kivy_app_get_catia_info.py
@@ -30,11 +33,12 @@ Nerd123Logo_ohneBackground.ico
 pyinstaller.exe --onefile --windowed --icon=app.ico app.py
 
 ##########onefile leads to detection of a trojan 
-pyinstaller --onefile --name Catia_V5_Bom_Generator_V_1_0_1   --noconsole --windowed --icon=Nerd123Logo_ohneBackground.ico MD_Catia_Bom_Generator_App.py
+pyinstaller --onefile --name Catia_V5_Bom_Generator_V_1_0_4   --noconsole --windowed --icon=Nerd123Logo_ohneBackground.ico MD_Catia_Bom_Generator_App.py
 
 ###########alternative do one dir and pack it with (Inno Setup. )  You can also use some installer that will pack the "onedir" if you want, like NSIS, or Inno Setup. 
-pyinstaller --onedir  --name Catia_V5_Bom_Generator_V_1_0_1  --noconsole --windowed --icon=Nerd123Logo_ohneBackground.ico MD_Catia_Bom_Generator_App.py
+pyinstaller --onedir  --name Catia_V5_Bom_Generator_V_1_0_4  --noconsole --windowed --icon=Nerd123Logo_ohneBackground.ico MD_Catia_Bom_Generator_App.py
 
+pyinstaller  --name Catia_V5_Bom_Generator_V_1_0_4  --noconsole --windowed --icon=Nerd123Logo_ohneBackground.ico MD_Catia_Bom_Generator_App.py
 
 
 (D:\11\02\31\dev_env\env) D:\11\02\31\Catia_Size_Reader_KivyMD_App>pyinstaller --onefile  --noconsole --windowed --icon=Nerd123Logo_ohneBackground.ico MD_Catia_Bom_Generator_App.py
@@ -68,10 +72,47 @@ see here https://stackoverflow.com/questions/33267002/why-am-i-suddenly-getting-
         return exe_path
 
 
+Tests mit verschiedenen pyinstaller versionen
+
+pip install pyinstaller==6.10.0  
+
+pyinstaller MD_Catia_Bom_Generator_App.py --name Catia_V5_Bom_Generator_V_1_0_4_pyinstaller_6_10_0 --onefile    --noconsole --windowed --icon=Nerd123Logo_ohneBackground.ico  
+
+
+pyinstaller MD_Catia_Bom_Generator_App.py --name Catia_V5_Bom_Generator_V_1_0_4_pyinstaller_6_10_0_  --noconsole --windowed --icon=Nerd123Logo_ohneBackground.ico 
+
+nuitka c compiler ähnlich wie pyinstaller
+https://nuitka.net/user-documentation/user-manual.html
+anleitung
+https://coderslegacy.com/python/nuitka-tutorial/
+https://github.com/Nuitka/Nuitka/tree/develop#tutorial-setup-and-build-on-windows
+# Stable version
+python -m pip install -U nuitka
+
+# Develop version
+python -m pip install -U "https://github.com/Nuitka/Nuitka/archive/develop.zip"
+
+python -m nuitka --standalone --follow-imports --windows-console-mode=disable MD_Catia_Bom_Generator_App.py
+
+
+python -m nuitka --windows-console-mode=disable --standalone MD_Catia_Bom_Generator_App.py --product-version=1.0.4 --product-name=Catia_V5_Bom_Generator --file-description=Bill of materail generator --copyright=zimmkon
+
+python -m nuitka --onefile  MD_Catia_Bom_Generator_App.py 
+
+pip install ordered-set
+
+#this was a build i tried on bom generater app
+python -m nuitka --standalone --follow-imports --windows-console-mode=disable MD_Catia_Bom_Generator_App.py
+
+#no console with all information no onefile
+python -m nuitka --windows-console-mode=disable --standalone MD_Catia_Bom_Generator_App.py --product-version=1.0.4 --product-name=Catia_V5_Bom_Generator --file-description=Bill_of_materail_generator --copyright=Zimmkon
 
 
 
 
+#test mit icon 
+--windows-icon-from-ico=your-icon.png    --windows-icon-from-ico=Nerd123Logo_ohneBackground.ico
+python -m nuitka --windows-console-mode=disable --standalone Catia_V5_Bom_Generator_V_1_0_5.py --product-version=1.0.5 --product-name=Catia_V5_Bom_Generator --file-description=Bill_of_materail_generator --copyright=Zimmkon --windows-icon-from-ico=Nerd123Logo_ohneBackground.ico
 
 
 
