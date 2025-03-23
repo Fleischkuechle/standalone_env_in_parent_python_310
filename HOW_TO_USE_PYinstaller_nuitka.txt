@@ -113,6 +113,19 @@ python -m nuitka --windows-console-mode=disable --standalone MD_Catia_Bom_Genera
 #test mit icon 
 --windows-icon-from-ico=your-icon.png    --windows-icon-from-ico=Nerd123Logo_ohneBackground.ico
 python -m nuitka --windows-console-mode=disable --standalone Catia_V5_Bom_Generator_V_1_0_5.py --product-version=1.0.5 --product-name=Catia_V5_Bom_Generator --file-description=Bill_of_materail_generator --copyright=Zimmkon --windows-icon-from-ico=Nerd123Logo_ohneBackground.ico
+#--Catia_V5_Bom_Generator_V_1_0_6.py
+python -m nuitka --windows-console-mode=disable --standalone Catia_V5_Bom_Generator_V_1_0_6.py --product-version=1.0.6 --product-name=Catia_V5_Bom_Generator --file-description=Bill_of_materail_generator --copyright=Zimmkon --windows-icon-from-ico=Nerd123Logo_ohneBackground.ico
+#--Catia_V5_Bom_Generator_V_1_0_7.py
+python -m nuitka --windows-console-mode=disable --standalone Catia_V5_Bom_Generator_V_1_0_7.py --product-version=1.0.7 --product-name=Catia_V5_Bom_Generator --file-description=Bill_of_materail_generator --copyright=Zimmkon --windows-icon-from-ico=Nerd123Logo_ohneBackground.ico
 
+
+#--Catia_V5_Pdf_Generator_app_V_0_0_1.py
+python -m nuitka --windows-console-mode=disable --standalone Catia_V5_Pdf_Generator_app_V_0_0_1.py --product-version=0.0.1 --product-name=Catia_V5_Pdf_Generator --file-description=Pdf_Generator --copyright=Zimmkon --windows-icon-from-ico=Nerd123Logo_ohneBackground.ico
+#--Catia_V5_Pdf_Generator_app_V_0_0_2.py
+python -m nuitka --windows-console-mode=disable --standalone Catia_V5_Pdf_Generator_app_V_0_0_2.py --product-version=0.0.2 --product-name=Catia_V5_Pdf_Generator --file-description=Pdf_Generator --copyright=Zimmkon --windows-icon-from-ico=Nerd123Logo_ohneBackground.ico
+
+
+#---CATIA_V5_Dimension_Formater_app_V_0_0_1
+python -m nuitka --windows-console-mode=disable --standalone CATIA_V5_Dimension_Formater_app_V_0_0_1.py --product-version=0.0.1 --product-name=CATIA_V5_Dimension_Formater --file-description=Formating_dimension_font_size --copyright=Zimmkon --windows-icon-from-ico=Nerd123Logo_ohneBackground.ico
 
 
