@@ -101,6 +101,11 @@ python -m nuitka --onefile  MD_Catia_Bom_Generator_App.py
 
 pip install ordered-set
 
+
+##########activate the venv python in cmd
+##########Open cmd and navigate to the folder where the pyfile is the use the python -m nutika with its arguments.
+
+
 #this was a build i tried on bom generater app
 python -m nuitka --standalone --follow-imports --windows-console-mode=disable MD_Catia_Bom_Generator_App.py
 
@@ -117,6 +122,8 @@ python -m nuitka --windows-console-mode=disable --standalone Catia_V5_Bom_Genera
 python -m nuitka --windows-console-mode=disable --standalone Catia_V5_Bom_Generator_V_1_0_6.py --product-version=1.0.6 --product-name=Catia_V5_Bom_Generator --file-description=Bill_of_materail_generator --copyright=Zimmkon --windows-icon-from-ico=Nerd123Logo_ohneBackground.ico
 #--Catia_V5_Bom_Generator_V_1_0_7.py
 python -m nuitka --windows-console-mode=disable --standalone Catia_V5_Bom_Generator_V_1_0_7.py --product-version=1.0.7 --product-name=Catia_V5_Bom_Generator --file-description=Bill_of_materail_generator --copyright=Zimmkon --windows-icon-from-ico=Nerd123Logo_ohneBackground.ico
+#--Catia_V5_Bom_Generator_V_1_0_8.py
+python -m nuitka --windows-console-mode=disable --standalone Catia_V5_Bom_Generator_V_1_0_8.py --product-version=1.0.8 --product-name=Catia_V5_Bom_Generator --file-description=Bill_of_materail_generator --copyright=Zimmkon --windows-icon-from-ico=Nerd123Logo_ohneBackground.ico
 
 
 #--Catia_V5_Pdf_Generator_app_V_0_0_1.py
