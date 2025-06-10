@@ -41,7 +41,9 @@ set MINICONDA_DOWNLOAD_URL=https://repo.anaconda.com/miniconda/Miniconda3-latest
 
 @REM set MINICONDA_CHECKSUM=3a8897cc5d27236ade8659f0e119f3a3ccaad68a45de45bfdd3102d8bec412ab
 @REM set MINICONDA_CHECKSUM=be382fc02742c734fd3c399c5e5d322bc9b43292117827ab9aa6f7446351e45c
-set MINICONDA_CHECKSUM=fb936987b769759fc852af1b2a0e359ac14620c2b7bea8a90c6d920f2b754c4a
+@REM set MINICONDA_CHECKSUM_LATEST=fb936987b769759fc852af1b2a0e359ac14620c2b7bea8a90c6d920f2b754c4a
+@REM 2025-04-30 13:18:48 	ea482f35b4861f047dc525c1e8dc645cc761a5460a121caf726dec098c5804de Checksum update
+set MINICONDA_CHECKSUM_LATEST=ea482f35b4861f047dc525c1e8dc645cc761a5460a121caf726dec098c5804de
 set conda_exists=F
 
 @rem figure out whether git and conda needs to be installed
@@ -56,7 +58,7 @@ if "%conda_exists%" == "F" (
 	mkdir "%INSTALL_DIR%"
 	call curl -Lk "%MINICONDA_DOWNLOAD_URL%" > "%INSTALL_DIR%\miniconda_installer.exe" || ( echo. && echo Miniconda failed to download. && goto end )
 
-	for /f %%a in ('CertUtil -hashfile "%INSTALL_DIR%\miniconda_installer.exe" SHA256 ^| find /i /v " " ^| find /i "%MINICONDA_CHECKSUM%"') do (
+	for /f %%a in ('CertUtil -hashfile "%INSTALL_DIR%\miniconda_installer.exe" SHA256 ^| find /i /v " " ^| find /i "%MINICONDA_CHECKSUM_LATEST%"') do (
 		set "output=%%a"
 	)
 
