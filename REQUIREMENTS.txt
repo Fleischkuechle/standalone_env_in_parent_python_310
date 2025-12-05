@@ -1,6 +1,2 @@
-kivy
-kivymd
-pycatia
-pywin32
-pypdf
-fpdf2
+playwright
+flask
