@@ -33,17 +33,12 @@ set TEMP=%cd%\dev_env
 set INSTALL_DIR=%cd%\dev_env
 set CONDA_ROOT_PREFIX=%cd%\dev_env\conda
 set INSTALL_ENV_DIR=%cd%\dev_env\env
+
 @REM see here for other versions: https://repo.anaconda.com/miniconda/
-@REM set MINICONDA_DOWNLOAD_URL=https://repo.anaconda.com/miniconda/Miniconda3-py310_23.3.1-0-Windows-x86_64.exe
-@REM set MINICONDA_CHECKSUM=307194e1f12bbeb52b083634e89cc67db4f7980bd542254b43d3309eaf7cb358
 @REM chaged to miniconda latest.
 set MINICONDA_DOWNLOAD_URL=https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe
 
-@REM set MINICONDA_CHECKSUM=3a8897cc5d27236ade8659f0e119f3a3ccaad68a45de45bfdd3102d8bec412ab
-@REM set MINICONDA_CHECKSUM=be382fc02742c734fd3c399c5e5d322bc9b43292117827ab9aa6f7446351e45c
-@REM set MINICONDA_CHECKSUM_LATEST=fb936987b769759fc852af1b2a0e359ac14620c2b7bea8a90c6d920f2b754c4a
-@REM 2025-04-30 13:18:48 	ea482f35b4861f047dc525c1e8dc645cc761a5460a121caf726dec098c5804de Checksum update
-set MINICONDA_CHECKSUM_LATEST=1ff9042360900be894efb7c11d6b2348b7a7a58c4ad4415c6ac2b60c58fff1c2
+set MINICONDA_CHECKSUM_LATEST=c76f35d66f8a19a3b33786abb86dacf0bf8d892a55d9dde38eccb0da0820ae99
 set conda_exists=F
 
 @rem figure out whether git and conda needs to be installed
