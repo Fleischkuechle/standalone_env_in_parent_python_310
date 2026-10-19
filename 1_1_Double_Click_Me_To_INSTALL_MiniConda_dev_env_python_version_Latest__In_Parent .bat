@@ -38,7 +38,7 @@ set INSTALL_ENV_DIR=%cd%\dev_env\env
 @REM chaged to miniconda latest.
 set MINICONDA_DOWNLOAD_URL=https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe
 
-set MINICONDA_CHECKSUM_LATEST=4441b50816f866f4e6e774e90f90a71bde756f06c94144407a6d93677c539e46
+set MINICONDA_CHECKSUM_LATEST=657ea0a3a2b7ddfdbb163a921edd5b4ad9b44e343d3b43a2a4100aeabe160b08
 set conda_exists=F
 
 @rem figure out whether git and conda needs to be installed
